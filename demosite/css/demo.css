@@ -1,0 +1,244 @@
+/* Canvas Overlay */
+#clearboard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 400px;
+    background: transparent;
+    z-index: 999999;
+    border: 0;
+}
+
+/* Control Slider styles */
+#toolbar {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 59px;
+    height: 59px;
+    overflow: hidden;
+    z-index: 9999999;
+    background: transparent url('../img/zero-purple-bg-long.png') no-repeat left top;
+}
+
+#toolbar.on {
+    background: transparent url('../img/zero-neon-bg-long.png') no-repeat left top;
+}
+
+#toolbar div {
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: relative;
+    float: left;
+    padding: 14px 7px;
+}
+
+#button_power {
+    background: transparent url('../img/bt-logo.png') no-repeat 14px 15px;
+    padding: 14px 15px !important;
+}
+#button_power.on {
+    background: transparent url('../img/bt-logo-ovr.png') no-repeat 14px 15px;
+}
+
+#button_tools {
+    background: transparent url('../img/bt-tools.png') no-repeat 10px 14px;
+}
+#button_tools.on {
+    background: transparent url('../img/bt-tools-ovr.png') no-repeat 10px 14px;
+}
+
+#button_chat {
+    background: transparent url('../img/bt-chat.png') no-repeat 10px 14px;
+}
+#button_chat.on {
+    background: transparent url('../img/bt-chat-ovr.png') no-repeat 10px 14px;
+}
+
+#button_send {
+    background: transparent url('../img/bt-save.png') no-repeat 10px 14px;
+}
+#button_send.on {
+    background: transparent url('../img/bt-save-ovr.png') no-repeat 10px 14px;
+}
+/* end Control Slider styles */
+
+/* Dialog box styles */
+.ui-dialog {
+    padding: 10px;
+    width: 400px;
+    overflow: hidden;
+    background: #42024f;
+    color: #FFF;
+    border: 0;
+    border-radius: 15px;
+}
+
+.ui-dialog .ui-dialog-content {
+    color: #FFF;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.ui-dialog .ui-dialog-content#tools-window { text-align: center; }
+
+.ui-dialog .ui-dialog-titlebar {
+    color: #FFF;
+    font-size: 22px;
+    font-weight: bold;
+    border: 0;
+    padding: 0;
+}
+
+.ui-dialog .ui-dialog-title {
+    float: left;
+    color: #FFF !important;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.ui-widget-header .ui-icon {
+    background-image: url(../img/bt-close.png);
+    width: 20px;
+    height: 20px;
+}
+.ui-icon-closethick { background-position: 0; }
+
+.ui-dialog .ui-dialog-titlebar-close {
+    width: 20px;
+    margin: -15px 0 0 0;
+    height: 20px;
+    text-shadow: none;
+    filter: alpha(opacity=25);
+    -khtml-opacity: 0.25;
+    -moz-opacity: 0.25;
+    opacity: 0.25;
+}
+
+.ui-dialog-content label { font-weight: bold; }
+/* end Dialog box styles */
+
+/* Toolbox > Options styles */
+.btn#tools_button_line { background: url(../img/bt-line.png) no-repeat 0 0; width: 90px; height: 40px; text-indent: -99999px; margin-right: 5px; }
+.btn#tools_button_cloud { background: url(../img/bt-clouds.png) no-repeat 0 0; width: 110px; height: 40px; text-indent: -99999px; margin-right: 5px; }
+.btn#tools_button_eraser { background: url(../img/bt-eraser.png) no-repeat 0 0; width: 100px; height: 40px; text-indent: -99999px; margin-right: 5px; }
+
+.btn#tools_button_clean {
+    background: url(../img/bt-wipe.png) no-repeat 0 0;
+    width: 310px;
+    height: 45px;
+    text-indent: -99999px;
+    margin-top: 15px;
+}
+
+.btn-danger#tools_button_line { background: url(../img/bt-line-ovr.png) no-repeat 0 0; }
+.btn-danger#tools_button_cloud { background: url(../img/bt-clouds-ovr.png) no-repeat 0 0; }
+.btn-danger#tools_button_eraser { background: url(../img/bt-eraser-ovr.png) no-repeat 0 0; }
+/* end Toolbox > Options styles */
+
+/* Toolbox > Color Palette styles */
+.btn-group { padding: 10px 0 20px 0; }
+.btn-group .btn {
+    padding: 0;
+    text-indent: -99999px;
+    border: 0;
+    width: 42px;
+    height: 42px;
+    margin: 0 5px;
+}
+
+.btn-group .btn#tools_button_color_Black { background: url(../img/bt-color-blk.png) no-repeat 0 0; }
+.btn-group .btn#tools_button_color_Purple { background: url(../img/bt-color-purp.png) no-repeat 0 0; }
+.btn-group .btn#tools_button_color_Blue { background: url(../img/bt-color-navy.png) no-repeat 0 0; }
+.btn-group .btn#tools_button_color_Aqua { background: url(../img/bt-color-blue.png) no-repeat 0 0; }
+.btn-group .btn#tools_button_color_Green { background: url(../img/bt-color-grn.png) no-repeat 0 0; }
+.btn-group .btn#tools_button_color_Orange { background: url(../img/bt-color-orn.png) no-repeat 0 0; }
+.btn-group .btn#tools_button_color_Red { background: url(../img/bt-color-red.png) no-repeat 0 0; }
+
+.btn-group .btn-danger#tools_button_color_Black { background: url(../img/bt-color-blk-ovr.png) no-repeat 0 0; }
+.btn-group .btn-danger#tools_button_color_Purple { background: url(../img/bt-color-purp-ovr.png) no-repeat 0 0; }
+.btn-group .btn-danger#tools_button_color_Blue { background: url(../img/bt-color-navy-ovr.png) no-repeat 0 0; }
+.btn-group .btn-danger#tools_button_color_Aqua { background: url(../img/bt-color-blue-ovr.png) no-repeat 0 0; }
+.btn-group .btn-danger#tools_button_color_Green { background: url(../img/bt-color-grn-ovr.png) no-repeat 0 0; }
+.btn-group .btn-danger#tools_button_color_Orange { background: url(../img/bt-color-orn-ovr.png) no-repeat 0 0; }
+.btn-group .btn-danger#tools_button_color_Red { background: url(../img/bt-color-red-ovr.png) no-repeat 0 0; }
+/* end Toolbox > Color Palette styles */
+
+
+/* Toolbox > Brush Sizer styles */
+.badge {}
+
+#connected-users {
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+#connected-users.off {
+    color: #FFFFFF;
+}
+
+#connected-users.on {
+    color: #5e2869;
+}
+
+
+.ui-slider {
+    position: relative;
+    text-align: center;
+    margin: 30px auto !important;
+}
+.brushsizes img { float:right; margin-top: -5px; }
+.brushsizes img:first-child { float:left; }
+
+.brushsizes { font-size: 13px; }
+/* end Toolbox > Brush Sizer styles */
+
+
+/* Chat and Email dialogs styles */
+#chat-window textarea,
+#send-window textarea,
+#chat-window input,
+#send-window input {
+    display: block;
+    padding: 5px;
+    font-size: 18px;
+    line-height: 1em;
+    color: #FFF;
+    border: 0;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background: #5e2869;
+    width: 95%;
+}
+
+#chat-button-send,
+#send-button-send {
+    position: absolute;
+    margin-top: 0px;
+    right: 0;
+    background: url(../img/bt-send.png) no-repeat 0 0;
+    width: 90px;
+    height: 30px;
+    text-indent: -99999px;
+    border: 0;
+}
+#chat-messages-area {
+    height: 150px;
+    overflow-y: scroll;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #5E2869;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+}
+/* end Chat and Email dialogs styles */

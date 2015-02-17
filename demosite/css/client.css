@@ -1,0 +1,50 @@
+
+#toolbar {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 59px;
+    height: 58px;
+    overflow: hidden;
+    background: transparent url('../img/zero-purple-bg-long.png') no-repeat left top;
+}
+
+#toolbar.on {
+    background: transparent url('../img/zero-neon-bg-long.png') no-repeat left top;
+}
+
+#toolbar div {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+}
+
+#button_power {
+    background: transparent url('../img/bt-logo.png') no-repeat left top;
+}
+#button_power.on {
+    background: transparent url('../img/bt-logo-ovr.png') no-repeat left top;
+}
+
+#button_draw {
+    background: transparent url('../img/bt-tools.png') no-repeat left top;
+}
+#button_draw.on {
+    background: transparent url('../img/bt-tools-ovr.png') no-repeat left top;
+}
+
+#button_chat {
+    background: transparent url('../img/bt-chat.png') no-repeat left top;
+}
+#button_chat.on {
+    background: transparent url('../img/bt-chat-ovr.png') no-repeat left top;
+}
+
+#button_send {
+    background: transparent url('../img/bt-save.png') no-repeat left top;
+}
+#button_send.on {
+    background: transparent url('../img/bt-save-ovr.png') no-repeat left top;
+}
+
